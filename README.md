@@ -1,38 +1,42 @@
 # slni's Personal Website
 
-个人主页，使用 Vite + Vue 3 构建，部署在 GitHub Pages。
+个人主页，使用纯 HTML、CSS 和 JavaScript 构建，部署在 GitHub Pages。
 
 ## 技术栈
 
-- **Vue 3** - 渐进式 JavaScript 框架
-- **Vite** - 下一代前端构建工具
+- **HTML5** - 页面结构
+- **CSS3** - 样式和动画
+- **JavaScript** - 交互功能
 - **GitHub Pages** - 静态网站托管
 
 ## 开发
 
+直接在浏览器中打开 `index.html` 文件即可预览。
+
+或者使用本地服务器：
 ```bash
-# 安装依赖
-npm install
+# 使用 Python 3
+python -m http.server 8000
 
-# 启动开发服务器
-npm run dev
+# 使用 Node.js
+npx serve
 
-# 构建生产版本
-npm run build
-
-# 预览生产构建
-npm run preview
+# 使用 PHP
+php -S localhost:8000
 ```
-
-## 部署
-
-每次推送到 `main` 分支时，GitHub Actions 会自动构建并部署到 GitHub Pages。
-
-网站地址：`https://slni.github.io/slni-githubpages/`
 
 ## 自定义
 
-编辑 `src/App.vue` 来修改个人信息、社交链接等内容。
+编辑以下文件来个性化你的网站：
+- `index.html` - 修改内容结构
+- `style.css` - 调整样式和颜色
+- `script.js` - 添加交互功能
+
+## 部署
+
+直接推送到 `main` 分支即可，GitHub Pages 会自动部署。
+
+网站地址：`https://slni.github.io/slni/`
 
 ## License
 
