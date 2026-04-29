@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于 - SLNI</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .about-content {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: var(--spacing-2xl) 0;
+        }
+        .about-content h1 {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+        .about-content p {
+            font-size: var(--font-size-lg);
+            line-height: 1.8;
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-md);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">SLNI</div>
+                <nav class="nav">
+                    <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+                    <a href="../index.html#apps" class="nav-link" data-i18n="nav.apps">应用</a>
+                    <a href="index.html" class="nav-link active" data-i18n="nav.about">关于</a>
+                </nav>
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="zh">中文</button>
+                    <span class="lang-divider">/</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Content -->
+    <div class="container">
+        <div class="about-content">
+            <h1 data-i18n="about.title">关于我</h1>
+            <p data-i18n="about.description">我是一名独立开发者，致力于打造简洁、高效、美观的应用程序。</p>
+            <p data-i18n="about.mission">我相信好的软件应该让用户的生活变得更简单，而不是更复杂。</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text" data-i18n="footer.copyright">&copy; 2026 SLNI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Add about specific i18n data
+        i18nData.zh = {
+            ...i18nData.zh,
+            'about.title': '关于我',
+            'about.description': '我是一名独立开发者，致力于打造简洁、高效、美观的应用程序。',
+            'about.mission': '我相信好的软件应该让用户的生活变得更简单，而不是更复杂。'
+        };
+        i18nData.en = {
+            ...i18nData.en,
+            'about.title': 'About Me',
+            'about.description': 'I am an indie developer dedicated to building simple, efficient, and beautiful applications.',
+            'about.mission': 'I believe good software should make users\' lives simpler, not more complex.'
+        };
+    </script>
+</body>
+</html>

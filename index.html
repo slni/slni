@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLNI - Apps</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">SLNI</div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link active" data-i18n="nav.home">首页</a>
+                    <a href="#apps" class="nav-link" data-i18n="nav.apps">应用</a>
+                    <a href="about/index.html" class="nav-link" data-i18n="nav.about">关于</a>
+                </nav>
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="zh">中文</button>
+                    <span class="lang-divider">/</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero.title">用心打造好用的应用</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">简洁、高效、美观</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section class="apps-section" id="apps">
+        <div class="container">
+            <h2 class="section-title" data-i18n="apps.title">我的应用</h2>
+            <div class="apps-grid" id="appsGrid">
+                <!-- Apps will be rendered here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text" data-i18n="footer.copyright">&copy; 2026 SLNI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

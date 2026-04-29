@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinBot - 记账应用</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .app-detail-header {
+            padding: var(--spacing-2xl) 0;
+            background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+        }
+        .app-detail-content {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xl);
+        }
+        .app-detail-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #4f46e5 0%, #8b5cf6 100%);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .app-detail-info h1 {
+            margin-bottom: var(--spacing-sm);
+            font-size: var(--font-size-4xl);
+        }
+        .app-detail-description {
+            color: var(--color-text-light);
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--spacing-md);
+        }
+        .app-detail-actions {
+            display: flex;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
+        }
+        .features-section {
+            padding: var(--spacing-2xl) 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        .feature-card {
+            padding: var(--spacing-lg);
+            background-color: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+        }
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--color-bg-alt);
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        .feature-card h3 {
+            margin-bottom: var(--spacing-xs);
+        }
+        .screenshots-section {
+            padding: var(--spacing-2xl) 0;
+            background-color: var(--color-bg-alt);
+        }
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        .screenshot-placeholder {
+            aspect-ratio: 16/9;
+            background-color: var(--color-border);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text-light);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">SLNI</div>
+                <nav class="nav">
+                    <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+                    <a href="../index.html#apps" class="nav-link" data-i18n="nav.apps">应用</a>
+                    <a href="../about/index.html" class="nav-link" data-i18n="nav.about">关于</a>
+                </nav>
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="zh">中文</button>
+                    <span class="lang-divider">/</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- App Detail Header -->
+    <section class="app-detail-header">
+        <div class="container">
+            <div class="app-detail-content">
+                <div class="app-detail-icon">F</div>
+                <div class="app-detail-info">
+                    <h1 data-i18n="finbot.title">FinBot</h1>
+                    <p class="app-detail-description" data-i18n="finbot.description">一款简洁智能的记账应用，帮助你轻松管理个人财务，追踪每一笔开支。</p>
+                    <div class="app-detail-actions">
+                        <a href="#" class="btn btn-primary" data-i18n="app.download">立即下载</a>
+                        <a href="../index.html" class="btn btn-outline" data-i18n="app.back">返回首页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="app.features">功能特点</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3 data-i18n="finbot.feature1.title">快速记账</h3>
+                    <p data-i18n="finbot.feature1.desc">简洁的界面设计，3秒内完成一笔记录</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 data-i18n="finbot.feature2.title">数据统计</h3>
+                    <p data-i18n="finbot.feature2.desc">直观的图表展示，了解消费趋势</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 data-i18n="finbot.feature3.title">数据安全</h3>
+                    <p data-i18n="finbot.feature3.desc">本地存储，保护您的隐私安全</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3 data-i18n="finbot.feature4.title">多种主题</h3>
+                    <p data-i18n="finbot.feature4.desc">支持深色模式和多种配色方案</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="app.screenshots">应用截图</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-placeholder">截图 1</div>
+                <div class="screenshot-placeholder">截图 2</div>
+                <div class="screenshot-placeholder">截图 3</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text" data-i18n="footer.copyright">&copy; 2026 SLNI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Add FinBot specific i18n data
+        i18nData.zh = {
+            ...i18nData.zh,
+            'finbot.title': 'FinBot',
+            'finbot.description': '一款简洁智能的记账应用，帮助你轻松管理个人财务，追踪每一笔开支。',
+            'finbot.feature1.title': '快速记账',
+            'finbot.feature1.desc': '简洁的界面设计，3秒内完成一笔记录',
+            'finbot.feature2.title': '数据统计',
+            'finbot.feature2.desc': '直观的图表展示，了解消费趋势',
+            'finbot.feature3.title': '数据安全',
+            'finbot.feature3.desc': '本地存储，保护您的隐私安全',
+            'finbot.feature4.title': '多种主题',
+            'finbot.feature4.desc': '支持深色模式和多种配色方案'
+        };
+        i18nData.en = {
+            ...i18nData.en,
+            'finbot.title': 'FinBot',
+            'finbot.description': 'A simple and smart expense tracking app to help you manage personal finances easily.',
+            'finbot.feature1.title': 'Quick Entry',
+            'finbot.feature1.desc': 'Clean interface design, record expenses in 3 seconds',
+            'finbot.feature2.title': 'Statistics',
+            'finbot.feature2.desc': 'Visualize your spending with intuitive charts',
+            'finbot.feature3.title': 'Data Security',
+            'finbot.feature3.desc': 'Local storage to protect your privacy',
+            'finbot.feature4.title': 'Multiple Themes',
+            'finbot.feature4.desc': 'Support dark mode and various color schemes'
+        };
+    </script>
+</body>
+</html>
