@@ -4,7 +4,7 @@ const appsData = [
         id: 'finbot',
         name: 'FinBot',
         nameEn: 'FinBot',
-        icon: 'F',
+        icon: '<img src="apps/images/finbot-icon.png" alt="FinBot" style="width:100%;height:100%;object-fit:contain;border-radius:8px;">',
         description: '一款简洁智能的记账应用，帮助你轻松管理个人财务，追踪每一笔开支。',
         descriptionEn: 'A simple and smart expense tracking app to help you manage personal finances easily.',
         tags: ['记账', '财务', '效率工具'],

@@ -78,18 +78,17 @@
             background-color: var(--color-bg-alt);
         }
         .screenshots-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--spacing-lg);
-        }
-        .screenshot-placeholder {
-            aspect-ratio: 16/9;
-            background-color: var(--color-border);
-            border-radius: var(--border-radius);
             display: flex;
-            align-items: center;
             justify-content: center;
-            color: var(--color-text-light);
+            gap: var(--spacing-lg);
+            flex-wrap: wrap;
+        }
+        .screenshot-img {
+            width: 100%;
+            max-width: 280px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            object-fit: cover;
         }
     </style>
 </head>
@@ -117,12 +116,12 @@
     <section class="app-detail-header">
         <div class="container">
             <div class="app-detail-content">
-                <div class="app-detail-icon">F</div>
+                <img src="images/finbot-icon.png" alt="FinBot" class="app-detail-icon">
                 <div class="app-detail-info">
                     <h1 data-i18n="finbot.title">FinBot</h1>
                     <p class="app-detail-description" data-i18n="finbot.description">一款简洁智能的记账应用，帮助你轻松管理个人财务，追踪每一笔开支。</p>
                     <div class="app-detail-actions">
-                        <a href="#" class="btn btn-primary" data-i18n="app.download">立即下载</a>
+                        <a href="https://apps.apple.com/cn/app/finbot-ai%E8%87%AA%E5%8A%A8%E8%AE%B0%E8%B4%A6/id6758813390" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="app.download">立即下载</a>
                         <a href="../index.html" class="btn btn-outline" data-i18n="app.back">返回首页</a>
                         <a href="finbot-eula.html" class="btn btn-outline" data-i18n="finbot.eula">使用条款</a>
                         <a href="finbot-privacy.html" class="btn btn-outline" data-i18n="finbot.privacy">隐私政策</a>
@@ -166,9 +165,10 @@
         <div class="container">
             <h2 class="section-title" data-i18n="app.screenshots">应用截图</h2>
             <div class="screenshots-grid">
-                <div class="screenshot-placeholder">截图 1</div>
-                <div class="screenshot-placeholder">截图 2</div>
-                <div class="screenshot-placeholder">截图 3</div>
+                <img src="images/iPhone_0.jpg" alt="FinBot Screenshot 1" class="screenshot-img">
+                <img src="images/iPhone_1.jpg" alt="FinBot Screenshot 2" class="screenshot-img">
+                <img src="images/iPhone_2.jpg" alt="FinBot Screenshot 3" class="screenshot-img">
+                <img src="images/iPhone_3.jpg" alt="FinBot Screenshot 4" class="screenshot-img">
             </div>
         </div>
     </section>
