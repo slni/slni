@@ -11,6 +11,18 @@ const appsData = [
         tagsEn: ['Finance', 'Productivity', 'Utilities'],
         page: 'apps/finbot.html',
         color: '#4f46e5'
+    },
+    {
+        id: 'petmatchparty',
+        name: 'Pet Match Party',
+        nameEn: 'Pet Match Party',
+        icon: '<img src="apps/images/petmatchparty-icon.png" alt="Pet Match Party" style="width:100%;height:100%;object-fit:contain;border-radius:8px;">',
+        description: '一款有趣的消消乐游戏，简单易上手，挑战你的反应速度和策略思维。',
+        descriptionEn: 'A fun match-3 puzzle game that is easy to learn and challenges your reflexes and strategy.',
+        tags: ['游戏', '休闲', '益智'],
+        tagsEn: ['Game', 'Casual', 'Puzzle'],
+        page: 'apps/petmatchparty.html',
+        color: '#f59e0b'
     }
 ];
 

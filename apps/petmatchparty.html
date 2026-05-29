@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Match Party - 消消乐游戏</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .app-detail-header {
+            padding: var(--spacing-2xl) 0;
+            background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+        }
+        .app-detail-content {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xl);
+        }
+        .app-detail-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: var(--border-radius);
+            flex-shrink: 0;
+        }
+        .app-detail-info h1 {
+            margin-bottom: var(--spacing-sm);
+            font-size: var(--font-size-4xl);
+        }
+        .app-detail-description {
+            color: var(--color-text-light);
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--spacing-md);
+        }
+        .app-detail-actions {
+            display: flex;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
+        }
+        .features-section {
+            padding: var(--spacing-2xl) 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        .feature-card {
+            padding: var(--spacing-lg);
+            background-color: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+        }
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--color-bg-alt);
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        .feature-card h3 {
+            margin-bottom: var(--spacing-xs);
+        }
+        .screenshots-section {
+            padding: var(--spacing-2xl) 0;
+            background-color: var(--color-bg-alt);
+        }
+        .screenshots-grid {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            flex-wrap: wrap;
+        }
+        .screenshot-img {
+            width: 100%;
+            max-width: 280px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">SLNI</div>
+                <nav class="nav">
+                    <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+                    <a href="../index.html#apps" class="nav-link" data-i18n="nav.apps">应用</a>
+                    <a href="../about/index.html" class="nav-link" data-i18n="nav.about">关于</a>
+                </nav>
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="zh">中文</button>
+                    <span class="lang-divider">/</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- App Detail Header -->
+    <section class="app-detail-header">
+        <div class="container">
+            <div class="app-detail-content">
+                <img src="images/petmatchparty-icon.png" alt="Pet Match Party" class="app-detail-icon">
+                <div class="app-detail-info">
+                    <h1 data-i18n="petmatchparty.title">Pet Match Party</h1>
+                    <p class="app-detail-description" data-i18n="petmatchparty.description">一款有趣的消消乐游戏，简单易上手，挑战你的反应速度和策略思维。</p>
+                    <div class="app-detail-actions">
+                        <a href="https://apps.apple.com/cn/app/pet-match-party/id6772724942" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="app.download">立即下载</a>
+                        <a href="../index.html" class="btn btn-outline" data-i18n="app.back">返回首页</a>
+                        <a href="petmatchparty-eula.html" class="btn btn-outline" data-i18n="petmatchparty.eula">使用条款</a>
+                        <a href="petmatchparty-privacy.html" class="btn btn-outline" data-i18n="petmatchparty.privacy">隐私政策</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="app.features">游戏特色</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3 data-i18n="petmatchparty.feature1.title">简单易上手</h3>
+                    <p data-i18n="petmatchparty.feature1.desc">直观的操作方式，任何人都能快速开始游戏</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3 data-i18n="petmatchparty.feature2.title">策略挑战</h3>
+                    <p data-i18n="petmatchparty.feature2.desc">思考每一步，规划你的消除路线</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3 data-i18n="petmatchparty.feature3.title">精美画面</h3>
+                    <p data-i18n="petmatchparty.feature3.desc">可爱的角色设计，色彩鲜艳明亮</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 data-i18n="petmatchparty.feature4.title">丰富关卡</h3>
+                    <p data-i18n="petmatchparty.feature4.desc">数百个精心设计的关卡等你挑战</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="app.screenshots">游戏截图</h2>
+            <div class="screenshots-grid">
+                <img src="images/game1.jpeg" alt="Pet Match Party Screenshot 1" class="screenshot-img">
+                <img src="images/game2.jpeg" alt="Pet Match Party Screenshot 2" class="screenshot-img">
+                <img src="images/game3.jpeg" alt="Pet Match Party Screenshot 3" class="screenshot-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text" data-i18n="footer.copyright">&copy; 2026 SLNI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Add Pet Match Party specific i18n data
+        i18nData.zh = {
+            ...i18nData.zh,
+            'petmatchparty.title': 'Pet Match Party',
+            'petmatchparty.description': '一款有趣的消消乐游戏，简单易上手，挑战你的反应速度和策略思维。',
+            'petmatchparty.feature1.title': '简单易上手',
+            'petmatchparty.feature1.desc': '直观的操作方式，任何人都能快速开始游戏',
+            'petmatchparty.feature2.title': '策略挑战',
+            'petmatchparty.feature2.desc': '思考每一步，规划你的消除路线',
+            'petmatchparty.feature3.title': '精美画面',
+            'petmatchparty.feature3.desc': '可爱的角色设计，色彩鲜艳明亮',
+            'petmatchparty.feature4.title': '丰富关卡',
+            'petmatchparty.feature4.desc': '数百个精心设计的关卡等你挑战',
+            'petmatchparty.eula': '使用条款',
+            'petmatchparty.privacy': '隐私政策'
+        };
+        i18nData.en = {
+            ...i18nData.en,
+            'petmatchparty.title': 'Pet Match Party',
+            'petmatchparty.description': 'A fun match-3 puzzle game that is easy to learn and challenges your reflexes and strategy.',
+            'petmatchparty.feature1.title': 'Easy to Play',
+            'petmatchparty.feature1.desc': 'Intuitive controls that anyone can pick up quickly',
+            'petmatchparty.feature2.title': 'Strategic Challenges',
+            'petmatchparty.feature2.desc': 'Think ahead and plan your matching routes',
+            'petmatchparty.feature3.title': 'Beautiful Graphics',
+            'petmatchparty.feature3.desc': 'Cute character designs with vibrant colors',
+            'petmatchparty.feature4.title': 'Many Levels',
+            'petmatchparty.feature4.desc': 'Hundreds of carefully designed levels to challenge you',
+            'petmatchparty.eula': 'EULA',
+            'petmatchparty.privacy': 'Privacy Policy'
+        };
+    </script>
+</body>
+</html>
