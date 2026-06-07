@@ -23,6 +23,18 @@ const appsData = [
         tagsEn: ['Game', 'Casual', 'Puzzle'],
         page: 'apps/petmatchparty.html',
         color: '#f59e0b'
+    },
+    {
+        id: 'beautywallpapers',
+        name: '美女壁纸',
+        nameEn: 'Beauty Wallpapers',
+        icon: '<img src="apps/images/beautywallpapers-icon.png" alt="Beauty Wallpapers" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">',
+        description: '一款精致的壁纸应用，浏览、收藏并保存高质量美女壁纸和 Live Photos。',
+        descriptionEn: 'A refined wallpaper app for browsing, collecting, and saving beautiful high-quality wallpapers and Live Photos.',
+        tags: ['壁纸', '图片', '生活方式'],
+        tagsEn: ['Wallpaper', 'Photos', 'Lifestyle'],
+        page: 'apps/beautywallpapers.html',
+        color: '#db7093'
     }
 ];
 
