@@ -35,6 +35,18 @@ const appsData = [
         tagsEn: ['Wallpaper', 'Photos', 'Lifestyle'],
         page: 'apps/beautywallpapers.html',
         color: '#db7093'
+    },
+    {
+        id: 'shotcraftstudio',
+        name: 'App截图工坊',
+        nameEn: 'ShotCraft Studio',
+        icon: '<img src="apps/images/shotcraftstudio-icon.png" alt="ShotCraft Studio" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">',
+        description: '为开发者和独立创作者打造的 App Store 截图制作工具，快速生成适配 iPhone 和 iPad 的上架素材。',
+        descriptionEn: 'An App Store screenshot creation tool for developers and indie creators to generate polished iPhone and iPad listing visuals.',
+        tags: ['截图', 'App Store', '开发工具'],
+        tagsEn: ['Screenshots', 'App Store', 'Developer Tool'],
+        page: 'apps/shotcraftstudio.html',
+        color: '#5b5ce2'
     }
 ];
 

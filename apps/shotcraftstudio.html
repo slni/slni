@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App截图工坊 - ShotCraft Studio</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .app-detail-header {
+            padding: var(--spacing-2xl) 0;
+            background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+        }
+        .app-detail-content {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xl);
+        }
+        .app-detail-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: var(--border-radius);
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .app-detail-info h1 {
+            margin-bottom: var(--spacing-sm);
+            font-size: var(--font-size-4xl);
+        }
+        .app-detail-description {
+            color: var(--color-text-light);
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--spacing-md);
+        }
+        .app-detail-actions {
+            display: flex;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
+        }
+        .features-section {
+            padding: var(--spacing-2xl) 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        .feature-card {
+            padding: var(--spacing-lg);
+            background-color: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+        }
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--color-bg-alt);
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        .feature-card h3 {
+            margin-bottom: var(--spacing-xs);
+        }
+        .overview-section {
+            padding: var(--spacing-2xl) 0;
+            background-color: var(--color-bg-alt);
+        }
+        .overview-text {
+            max-width: 820px;
+            margin: 0 auto;
+            color: var(--color-text-light);
+            font-size: var(--font-size-lg);
+            line-height: 1.8;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">SLNI</div>
+                <nav class="nav">
+                    <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+                    <a href="../index.html#apps" class="nav-link" data-i18n="nav.apps">应用</a>
+                    <a href="../about/index.html" class="nav-link" data-i18n="nav.about">关于</a>
+                </nav>
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="zh">中文</button>
+                    <span class="lang-divider">/</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="app-detail-header">
+        <div class="container">
+            <div class="app-detail-content">
+                <img src="images/shotcraftstudio-icon.png" alt="ShotCraft Studio" class="app-detail-icon">
+                <div class="app-detail-info">
+                    <h1 data-i18n="shotcraftstudio.title">App截图工坊</h1>
+                    <p class="app-detail-description" data-i18n="shotcraftstudio.description">为开发者和独立创作者打造的 App Store 截图制作工具，快速生成适配 iPhone 和 iPad 的上架素材。</p>
+                    <div class="app-detail-actions">
+                        <a href="../index.html" class="btn btn-outline" data-i18n="app.back">返回首页</a>
+                        <a href="shotcraftstudio-privacy.html" class="btn btn-outline" data-i18n="shotcraftstudio.privacy">隐私政策</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="app.features">功能特点</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">▣</div>
+                    <h3 data-i18n="shotcraftstudio.feature1.title">截图模板制作</h3>
+                    <p data-i18n="shotcraftstudio.feature1.desc">导入应用截图，编辑标题和副标题，生成 App Store 所需视觉素材</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⌘</div>
+                    <h3 data-i18n="shotcraftstudio.feature2.title">多设备支持</h3>
+                    <p data-i18n="shotcraftstudio.feature2.desc">为 iPhone 和 iPad 创建清晰、统一的商店截图</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">A</div>
+                    <h3 data-i18n="shotcraftstudio.feature3.title">多语言项目</h3>
+                    <p data-i18n="shotcraftstudio.feature3.desc">管理不同 App Store 地区的本地化文案和截图内容</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">◐</div>
+                    <h3 data-i18n="shotcraftstudio.feature4.title">精致配色</h3>
+                    <p data-i18n="shotcraftstudio.feature4.desc">选择适合产品气质的颜色风格，让截图更有完成度</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⇪</div>
+                    <h3 data-i18n="shotcraftstudio.feature5.title">直传 App Store Connect</h3>
+                    <p data-i18n="shotcraftstudio.feature5.desc">选择设备、语言和替换选项后，将截图直接上传到 App Store Connect</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☁</div>
+                    <h3 data-i18n="shotcraftstudio.feature6.title">iCloud 同步</h3>
+                    <p data-i18n="shotcraftstudio.feature6.desc">同步多个截图项目，方便在不同设备间继续创作</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="overview-section">
+        <div class="container">
+            <p class="overview-text" data-i18n="shotcraftstudio.overview">App截图工坊适合开发者、设计师和产品团队使用。你可以集中管理多个截图项目，维护多语言素材，将完成后的截图保存到照片图库，或在确认设备、语言和替换策略后上传到 App Store Connect，让上架素材准备流程更清晰高效。</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text" data-i18n="footer.copyright">&copy; 2026 SLNI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        i18nData.zh = {
+            ...i18nData.zh,
+            'shotcraftstudio.title': 'App截图工坊',
+            'shotcraftstudio.description': '为开发者和独立创作者打造的 App Store 截图制作工具，快速生成适配 iPhone 和 iPad 的上架素材。',
+            'shotcraftstudio.feature1.title': '截图模板制作',
+            'shotcraftstudio.feature1.desc': '导入应用截图，编辑标题和副标题，生成 App Store 所需视觉素材',
+            'shotcraftstudio.feature2.title': '多设备支持',
+            'shotcraftstudio.feature2.desc': '为 iPhone 和 iPad 创建清晰、统一的商店截图',
+            'shotcraftstudio.feature3.title': '多语言项目',
+            'shotcraftstudio.feature3.desc': '管理不同 App Store 地区的本地化文案和截图内容',
+            'shotcraftstudio.feature4.title': '精致配色',
+            'shotcraftstudio.feature4.desc': '选择适合产品气质的颜色风格，让截图更有完成度',
+            'shotcraftstudio.feature5.title': '直传 App Store Connect',
+            'shotcraftstudio.feature5.desc': '选择设备、语言和替换选项后，将截图直接上传到 App Store Connect',
+            'shotcraftstudio.feature6.title': 'iCloud 同步',
+            'shotcraftstudio.feature6.desc': '同步多个截图项目，方便在不同设备间继续创作',
+            'shotcraftstudio.overview': 'App截图工坊适合开发者、设计师和产品团队使用。你可以集中管理多个截图项目，维护多语言素材，将完成后的截图保存到照片图库，或在确认设备、语言和替换策略后上传到 App Store Connect，让上架素材准备流程更清晰高效。',
+            'shotcraftstudio.privacy': '隐私政策'
+        };
+        i18nData.en = {
+            ...i18nData.en,
+            'shotcraftstudio.title': 'ShotCraft Studio',
+            'shotcraftstudio.description': 'An App Store screenshot creation tool built for developers and indie creators to generate polished iPhone and iPad listing visuals.',
+            'shotcraftstudio.feature1.title': 'Screenshot Builder',
+            'shotcraftstudio.feature1.desc': 'Import app screenshots, edit titles and subtitles, and create App Store-ready visuals',
+            'shotcraftstudio.feature2.title': 'Device Support',
+            'shotcraftstudio.feature2.desc': 'Create consistent store screenshots for iPhone and iPad',
+            'shotcraftstudio.feature3.title': 'Multi-language Projects',
+            'shotcraftstudio.feature3.desc': 'Manage localized copy and screenshots for different App Store locales',
+            'shotcraftstudio.feature4.title': 'Polished Color Styles',
+            'shotcraftstudio.feature4.desc': 'Choose visual styles that fit your product and make screenshots feel complete',
+            'shotcraftstudio.feature5.title': 'App Store Connect Upload',
+            'shotcraftstudio.feature5.desc': 'Choose devices, languages, and replacement options before uploading screenshots',
+            'shotcraftstudio.feature6.title': 'iCloud Sync',
+            'shotcraftstudio.feature6.desc': 'Sync screenshot projects so you can continue working across devices',
+            'shotcraftstudio.overview': 'ShotCraft Studio is made for developers, designers, and product teams who need a faster way to prepare App Store screenshot assets. Manage multiple projects, localize screenshot content, export finished images to Photos, or upload directly to App Store Connect with clear control over devices, languages, and replacement behavior.',
+            'shotcraftstudio.privacy': 'Privacy Policy'
+        };
+    </script>
+</body>
+</html>
